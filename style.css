@@ -7,12 +7,12 @@ body {
 .title {
     padding-bottom: 1%;
     padding-top: 1%;
-    border-radius: 6px;
+    border-radius: 6px 6px 0px 0px;
     color: white;
     background: linear-gradient(to bottom,#bebebe 0,#777 3%,#232323 55%,#000 55%,#161616 98%,#000 100%);
     text-align: center;
     font-weight: 350;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -24,6 +24,11 @@ body {
     background-color: #232323;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+    color: green;
 }
 
 /*
