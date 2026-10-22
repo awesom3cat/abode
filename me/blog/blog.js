@@ -19,6 +19,9 @@ async function loadJSON() {
         const date = document.createElement("th");
         date.innerHTML = posts.posts[i].date;
 
+        const tags = document.createElement("th");
+        tags.innerHTML = posts.posts[i].tags;
+
         const link = document.createElement("th");
         const hypr = document.createElement("a");
         hypr.innerHTML = posts.posts[i].link;
@@ -27,6 +30,7 @@ async function loadJSON() {
 
         row.append(title);
         row.append(date);
+        row.append(tags);
         row.append(link);
 
         table.append(row);
