@@ -4,6 +4,7 @@ body {
 }
 
 .title {
+
     padding-bottom: 1%;
     padding-top: 1%;
     border-radius: 6px 6px 0px 0px;
@@ -28,18 +29,11 @@ body {
 }
 
 .actualContent {
-    display: flex;
-    justify-content: center;
+    height: 100%;
 }
 
 .main {
-    flex-grow: 3;
-}
-
-.sidebar {
-    background-color: #000;
-    flex-grow: 1;
-    border-radius: 0px 0px 0px 6px;
+    height: 1000px;
 }
 
 a {
