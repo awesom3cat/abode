@@ -13,6 +13,11 @@ function isPhone() {
 
 isPhone()
 
+const lock = document.createElement("meta");
+lock.name = "darkreader-lock";
+document.head.appendChild(lock);
+
+
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event
 
