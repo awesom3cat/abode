@@ -12,8 +12,14 @@ async function loadJSON() {
 				//generateTable(posts);
 }
 
+
+// hey stupid, remember to add image support to the json file
 async function generatePosts(posts) {
 		for (i = 0; i < posts.posts.length; i++) {
+				const a = document.createElement("a");
+				a.href =  posts.posts[i].link;
+
+
 				const div = document.createElement("div");
 				div.classList.add("post");
 
@@ -23,12 +29,14 @@ async function generatePosts(posts) {
 				
 				const text = document.createElement("p");
 				text.innerText = posts.posts[i].title + " - " + posts.posts[i].date;
+				
 
 
 				div.append(thumbnail);
 				div.append(text);
-
-				container.append(div);
+		
+				a.append(div);
+				container.append(a);
 		}
 }
 
