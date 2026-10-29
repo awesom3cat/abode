@@ -1,17 +1,42 @@
 /* blog.js */
 
-const reader = new FileReader();
 
 const table = document.getElementById("table");
-
+const container = document.getElementById("postContainer");
 
 async function loadJSON() {
     const response = await fetch("posts.json")
     const posts = await response.json();
-
     
-    for (i = 0; i < posts.posts.length; i++) {
-        const row = document.createElement("tr")
+				generatePosts(posts);
+				//generateTable(posts);
+}
+
+async function generatePosts(posts) {
+		for (i = 0; i < posts.posts.length; i++) {
+				const div = document.createElement("div");
+				div.classList.add("post");
+
+				const thumbnail = document.createElement("img");
+				thumbnail.classList.add("postImg");
+				thumbnail.src = "noImage.png";
+				
+				const text = document.createElement("p");
+				text.innerText = posts.posts[i].title + " - " + posts.posts[i].date;
+
+
+				div.append(thumbnail);
+				div.append(text);
+
+				container.append(div);
+		}
+}
+
+
+/*
+async function generateTable(posts) {
+		for (i = 0; i < posts.posts.length; i++) {
+        const row = document.createElement("tr");
 
         const title = document.createElement("th");
         title.innerHTML = posts.posts[i].title;
@@ -34,7 +59,8 @@ async function loadJSON() {
         row.append(link);
 
         table.append(row);
-    }
+				}
 }
+*/
 
 loadJSON()

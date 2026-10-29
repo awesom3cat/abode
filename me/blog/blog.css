@@ -1,0 +1,23 @@
+.postContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+}
+
+.post {
+		background-color: black;
+		border-radius: 10px;
+		margin: 10px;
+}
+
+.post p {
+		padding-bottom: 20px;
+		width: 400px;
+		height: 30px;
+}
+
+.postImg {
+		border-radius: 10px 10px 0px 0px;
+		width: 400px;
+		height: auto;
+}
