@@ -1,6 +1,13 @@
 {
     "posts" : [
         {
+            "title": "Website Redesign",
+            "date": "sometime/2026",
+            "tags" : "siteupdate",
+            "link": "posts/2026/november/redesign",
+            "image" : "posts/2026/november/redesign/redesign.png"
+        },
+        {
             "title": "Housekeeping",
             "date": "08/06/2026",
             "tags" : "siteupdate",
