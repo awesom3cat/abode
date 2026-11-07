@@ -4,13 +4,15 @@
             "title": "Housekeeping",
             "date": "08/06/2026",
             "tags" : "siteupdate",
-            "link": "posts/2026/august/housekeeping"
+            "link": "posts/2026/august/housekeeping",
+            "image" : "none"
         },
         {
             "title": "My first Blog post!",
             "date": "07/11/2026",
             "tags" : "siteupdate",
-            "link": "posts/2026/july/firstPost"
+            "link": "posts/2026/july/firstPost",
+            "image" : "posts/2026/july/firstPost/home.png"
         }
     ]
 }

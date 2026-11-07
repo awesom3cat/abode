@@ -8,35 +8,40 @@ async function loadJSON() {
     const response = await fetch("posts.json")
     const posts = await response.json();
     
-				generatePosts(posts);
-				//generateTable(posts);
+	generatePosts(posts);
+	//generateTable(posts);
 }
 
 
 // hey stupid, remember to add image support to the json file
 async function generatePosts(posts) {
-		for (i = 0; i < posts.posts.length; i++) {
-				const a = document.createElement("a");
-				a.href =  posts.posts[i].link;
+	for (i = 0; i < posts.posts.length; i++) {
+		const a = document.createElement("a");
+		a.href =  posts.posts[i].link;
 
 
-				const div = document.createElement("div");
-				div.classList.add("post");
+		const div = document.createElement("div");
+		div.classList.add("post");
 
-				const thumbnail = document.createElement("img");
-				thumbnail.classList.add("postImg");
-				thumbnail.src = "noImage.png";
-				
-				const text = document.createElement("p");
-				text.innerText = posts.posts[i].title + " - " + posts.posts[i].date;
-				
-
-
-				div.append(thumbnail);
-				div.append(text);
+		const thumbnail = document.createElement("img");
+		thumbnail.classList.add("postImg");
+        if (posts.posts[i].image == "none") {
+            thumbnail.src = "noImage.png";
+        } else {
+            thumbnail.src = posts.posts[i].image;
+        }
 		
-				a.append(div);
-				container.append(a);
+				
+		const text = document.createElement("p");
+		text.innerText = posts.posts[i].title + " - " + posts.posts[i].date;
+				
+
+
+		div.append(thumbnail);
+		div.append(text);
+		
+		a.append(div);
+		container.append(a);
 		}
 }
 
