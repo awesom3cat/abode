@@ -31,9 +31,6 @@ body {
 				height: 100%;
 }
 
-.main {
-				height: 1000px;
-}
 
 .whoEvenIsYou {
 				display: flex;
@@ -81,6 +78,11 @@ button {
     padding: 8px;
     width: 150px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navIcon {
+    width: 128px;
+    height: auto;
 }
 
 /* every gradient except for the button gradient was stolen from https://frutigeraeroarchive.org/ */
