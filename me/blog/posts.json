@@ -4,22 +4,22 @@
             "title": "Website Redesign",
             "date": "sometime/2026",
             "tags" : "siteupdate",
-            "link": "posts/2026/november/redesign",
-            "image" : "posts/2026/november/redesign/redesign.png"
+            "link": "/me/blog/read/?p=/me/blog/posts/2026/november/redesign",
+            "image" : "/me/blog/posts/2026/november/redesign/redesign.png"
         },
         {
             "title": "Housekeeping",
             "date": "08/06/2026",
             "tags" : "siteupdate",
-            "link": "posts/2026/august/housekeeping",
+            "link": "/me/blog/read/?p=/me/blog/posts/2026/august/housekeeping",
             "image" : "none"
         },
         {
             "title": "My first Blog post!",
             "date": "07/11/2026",
             "tags" : "siteupdate",
-            "link": "posts/2026/july/firstPost",
-            "image" : "posts/2026/july/firstPost/home.png"
+            "link": "/me/blog/read/?p=/me/blog/posts/2026/july/firstPost",
+            "image" : "/me/blog/posts/2026/july/firstPost/home.png"
         }
     ]
 }
