@@ -12,7 +12,6 @@ function isPhone() {
 }
 
 isPhone()
-w3.includeHTML();
 
 const lock = document.createElement("meta");
 lock.name = "darkreader-lock";
